@@ -16,10 +16,16 @@ const Images = () => {
       ".image",
       {
         opacity: 0,
+        rotation: 0,
+        top: "15%",
       },
       {
         opacity: 1,
+        rotation: 35,
+        top: "10%",
+        dusation: 0.5,
         ease: "linear",
+        transformOrigin: "center center",
       }
     );
   });
@@ -30,7 +36,6 @@ const Images = () => {
         className="image"
         style={{
           width: "200px",
-          top: "10%",
           right: "10%",
         }}
         src={bag}
