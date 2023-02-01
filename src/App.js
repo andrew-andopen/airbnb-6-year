@@ -28,9 +28,8 @@ function App() {
         <StyledH1>{data[stat]}</StyledH1>
         <Button updateStat={updateStat} />
       </StyledContainer>
-      <Images />
 
-      {stat === 1 && <Dots />}
+      {stat === 0 ? <Images /> : stat === 1 ? <Dots /> : null}
     </div>
   );
 }
