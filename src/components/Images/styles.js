@@ -13,4 +13,5 @@ export const StyledImage = styled.img`
   position: absolute;
   border-radius: 8px;
   opacity: 1;
+  transform-origin: center center;
 `;

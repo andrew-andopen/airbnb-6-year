@@ -13,7 +13,7 @@ export const StyledDotsContainer = styled.div`
   z-index: -1;
 `;
 
-const Dots = () => {
+const Dots = ({stat}) => {
   const matrix = [...Array(120).keys()];
 
   const vw = window.innerWidth;
@@ -48,7 +48,7 @@ const Dots = () => {
         stagger: 0.08,
       }
     );
-  });
+  }, [stat]);
 
   return (
     <StyledDotsContainer>

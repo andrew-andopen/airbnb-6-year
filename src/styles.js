@@ -30,11 +30,14 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
-  font-family: "Tines Normal",Arial,sans-serif;
+  font-family: "Nitti",Arial,sans-serif;
   font-size: 10px;
   background: #F2EBE0;
   overflow:hidden;
 }
+
+
+
 ol, ul {
   list-style: none;
 }
@@ -74,14 +77,19 @@ a {
   color:#333;
 }
 
+
 `;
 
 export const StyledH1 = styled.h1`
   font-family: "Leitura 1", Arial, sans-serif;
-  font-size: 40px;
-  line-height: 48px;
-  text-align: center;
-  margin-bottom: 32px;
+  font-size: 32px;
+  line-height: 40px;
+
+  & > span {
+    font-family: "Leitura 3";
+    font-size: 40px;
+    line-height: 40px;
+  }
 `;
 
 export const StyledContainer = styled.div`
@@ -92,4 +100,10 @@ export const StyledContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 80px;
+`;
+
+export const StyledTitleContainer = styled.div`
+  margin: 0 40px;
+  max-width: 70%;
+  text-align: center;
 `;

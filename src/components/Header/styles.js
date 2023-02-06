@@ -8,4 +8,5 @@ export const StyledHeader = styled.header`
 
 export const StyledLogo = styled.img`
   width: 120px;
+  cursor: pointer;
 `;

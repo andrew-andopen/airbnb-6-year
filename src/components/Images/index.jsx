@@ -10,30 +10,28 @@ import vase from "../../images/vase.jpg";
 
 import { StyledImageContainer, StyledImage } from "./styles";
 
-const Images = () => {
+const Images = ({stat}) => {
   useEffect(() => {
     gsap.fromTo(
       ".image",
       {
         opacity: 0,
-        rotation: 0,
-        top: "15%",
+        marginTop: 20,
       },
       {
+        marginTop: 0,
         opacity: 1,
-        rotation: 35,
-        top: "10%",
-        dusation: 0.5,
+        dusation: 0.2,
+        stagger: 0.2,
         ease: "linear",
-        transformOrigin: "center center",
       }
     );
-  });
+  },[stat]);
 
   return (
     <StyledImageContainer>
       <StyledImage
-        className="image"
+        className="image bag"
         style={{
           width: "200px",
           right: "10%",
@@ -43,6 +41,7 @@ const Images = () => {
       />
 
       <StyledImage
+        className="image blanket"
         style={{
           width: "200px",
           bottom: "10%",
@@ -53,6 +52,7 @@ const Images = () => {
       />
 
       <StyledImage
+        className="image book"
         style={{
           width: "200px",
           top: "10%",
@@ -63,6 +63,7 @@ const Images = () => {
       />
 
       <StyledImage
+        className="image mugs"
         style={{
           width: "200px",
           bottom: "10%",
@@ -73,6 +74,7 @@ const Images = () => {
       />
 
       <StyledImage
+        className="image vase"
         style={{
           width: "200px",
           bottom: "10%",
