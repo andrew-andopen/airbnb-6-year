@@ -111,12 +111,12 @@ export const StyledSuccessContainer = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 `;
 
 export const SuccessTitleContainer = styled.div`
   max-width: 80%;
-  text-align: center;
+  text-align: lefft;
 `;
 
 export const SuccessH1 = styled.h1`

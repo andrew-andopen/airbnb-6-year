@@ -46,7 +46,7 @@ const Form = () => {
     });
   };
 
-  const [hasSubmitted, setHasSubmitted] = useState(false);
+  const [hasSubmitted, setHasSubmitted] = useState(true);
   const submittedState = () => {
     setHasSubmitted(true);
   };
