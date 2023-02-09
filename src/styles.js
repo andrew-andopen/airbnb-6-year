@@ -33,7 +33,6 @@ body {
   font-family: "Nitti",Arial,sans-serif;
   font-size: 10px;
   background: #F2EBE0;
-  overflow:hidden;
 }
 
 
@@ -61,6 +60,13 @@ img, iframe {
 
 input, textarea, select {
   font: inherit;
+
+ :-webkit-autofill,
+:-webkit-autofill:hover, 
+:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
 }
 
 * {
@@ -77,7 +83,6 @@ a {
   color:#333;
 }
 
-
 `;
 
 export const StyledH1 = styled.h1`
@@ -86,24 +91,40 @@ export const StyledH1 = styled.h1`
   line-height: 40px;
 
   & > span {
-    font-family: "Leitura 3";
     font-size: 40px;
     line-height: 40px;
+  }
+
+  @media (max-width: 1440px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  & > span {
+    font-family: "Leitura 3";
+    font-size: 32px;
+    line-height: 32px;
   }
 `;
 
 export const StyledContainer = styled.div`
-  width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 80px;
+
+  overflow: hidden;
 `;
 
 export const StyledTitleContainer = styled.div`
-  margin: 0 40px;
-  max-width: 70%;
-  text-align: center;
+  margin-bottom: 200px;
+  max-width: 35%;
+`;
+
+export const StyledFormContainer = styled.div`
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 `;

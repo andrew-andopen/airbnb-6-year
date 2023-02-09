@@ -1,3 +1,5 @@
+import React from "react";
+
 import styled from "styled-components";
 import { gsap } from "gsap";
 import { useEffect } from "react";
@@ -13,7 +15,7 @@ export const StyledDotsContainer = styled.div`
   z-index: -1;
 `;
 
-const Dots = ({stat}) => {
+const Dots = ({ stat }) => {
   const matrix = [...Array(120).keys()];
 
   const vw = window.innerWidth;
@@ -44,7 +46,7 @@ const Dots = ({stat}) => {
           ],
           true
         ),
-        duration: 0.3,
+        duration: 0.1,
         stagger: 0.08,
       }
     );

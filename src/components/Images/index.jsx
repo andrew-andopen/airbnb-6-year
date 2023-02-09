@@ -1,88 +1,54 @@
+import React from "react";
+
 import { useEffect } from "react";
 
 import { gsap } from "gsap";
 
-import bag from "../../images/bag.jpg";
-import blanket from "../../images/blanket.jpg";
-import book from "../../images/book.jpg";
-import mugs from "../../images/mugs.jpg";
-import vase from "../../images/vase.jpg";
+import aesop from "../../images/aesop.png";
+import belo from "../../images/belo.png";
+import guestbook from "../../images/guestbook.png";
+import mug from "../../images/mug.png";
+import candle from "../../images/candle.png";
+import tote from "../../images/tough_tote.png";
+import waterbottle from "../../images/waterbottle.png";
 
 import { StyledImageContainer, StyledImage } from "./styles";
 
-const Images = ({stat}) => {
+const Images = ({ stat }) => {
   useEffect(() => {
     gsap.fromTo(
       ".image",
       {
+        scale: 0,
         opacity: 0,
         marginTop: 20,
+        rotation: 45,
       },
       {
         marginTop: 0,
+        scale: 1,
         opacity: 1,
-        dusation: 0.2,
-        stagger: 0.2,
-        ease: "linear",
+        duration: 1,
+        rotation: 0,
+        stagger: 0.1,
+        ease: "elastic.out(1.1, 0.8)",
       }
     );
-  },[stat]);
+  }, [stat]);
 
   return (
     <StyledImageContainer>
-      <StyledImage
-        className="image bag"
-        style={{
-          width: "200px",
-          right: "10%",
-        }}
-        src={bag}
-        alt="bag"
-      />
+      <StyledImage className="image aesop" src={aesop} alt="bag" />
 
-      <StyledImage
-        className="image blanket"
-        style={{
-          width: "200px",
-          bottom: "10%",
-          right: "10%",
-        }}
-        src={blanket}
-        alt="blanket"
-      />
+      <StyledImage className="image belo" src={belo} alt="blanket" />
 
-      <StyledImage
-        className="image book"
-        style={{
-          width: "200px",
-          top: "10%",
-          left: "10%",
-        }}
-        src={book}
-        alt="book"
-      />
+      <StyledImage className="image guestbook" src={guestbook} alt="book" />
 
-      <StyledImage
-        className="image mugs"
-        style={{
-          width: "200px",
-          bottom: "10%",
-          left: "10%",
-        }}
-        src={mugs}
-        alt="mugs"
-      />
+      <StyledImage className="image mug" src={mug} alt="mugs" />
 
-      <StyledImage
-        className="image vase"
-        style={{
-          width: "200px",
-          bottom: "10%",
-          left: "50%",
-        }}
-        src={vase}
-        alt="vase"
-      />
+      <StyledImage className="image candle" src={candle} alt="vase" />
+      <StyledImage className="image tote" src={tote} alt="vase" />
+      <StyledImage className="image waterbottle" src={waterbottle} alt="vase" />
     </StyledImageContainer>
   );
 };

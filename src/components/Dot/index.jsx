@@ -1,3 +1,5 @@
+import React from "react";
+
 const Dot = () => {
   const styles = {
     dot: {

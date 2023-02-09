@@ -1,3 +1,5 @@
+import React from "react";
+
 import { StyledFeedbackCard } from "./styles";
 
 const FeedbackCard = ({ title, background, color, className }) => {

@@ -1,3 +1,4 @@
+import React from "react";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import FeedbackCard from "../Feedback Card";
@@ -59,9 +60,47 @@ const feedbackData = [
     color: "#C8D8E2",
     className: "navy card",
   },
+  {
+    title:
+      "“They are super cute but my favorite is how they were designed and made so ethically- very glad to be introduced to this brand and will be buying more from them”",
+    background: "#346250",
+    color: "#D8DCC4",
+    className: "forest card",
+  },
+  {
+    title:
+      "“Cool gift. Something a bit different than the average “corporate gift”. We appreciate it!”",
+    background: "#EE763D",
+    color: "#F7DECC",
+    className: "rust card",
+  },
+  {
+    title:
+      "“Cool gift. Something a bit different than the average “corporate gift”. We appreciate it!”",
+    background: "#F8FC53",
+    color: "#141414",
+    className: "acid_two card",
+  },
+  {
+    title:
+      "“Cool gift. Something a bit different than the average “corporate gift”. We appreciate it!”",
+    background: "#E19F9A",
+    color: "#F7DECC",
+    className: "pink card",
+  },
+  {
+    title:
+      "“I think it’s great that you guys offered the option of donating to a charity :)”",
+    background: "#F7DECC",
+    color: "#EE763D",
+    className: "blush_two card",
+  },
 ];
 
-const Feedback = ({stat}) => {
+const Feedback = ({ stat }) => {
+  const vw = window.innerWidth / 2;
+  const vh = window.innerHeight;
+
   useEffect(() => {
     gsap.fromTo(
       ".card",
@@ -75,7 +114,7 @@ const Feedback = ({stat}) => {
         ease: "elastic.out(1.1, 0.8)",
       }
     );
-  },[stat]);
+  }, [stat]);
 
   return (
     <FeedbackContainer>

@@ -1,10 +1,12 @@
+import React from "react";
+
 import { StyledH1 } from "./styles";
 
 const data = [
   {
     title: (
       <StyledH1>
-        six years on, we’re still going <span>350,000</span> — and together
+        Six years on, we’re still going <span>350,000</span> — and together
         we’ve gifted over hosts and guests
       </StyledH1>
     ),
