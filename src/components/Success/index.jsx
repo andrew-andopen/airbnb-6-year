@@ -1,6 +1,7 @@
 import React from "react";
 import SuccessIllustration from "../SuccessIllustration";
 import Dot from "../Dot";
+import Button from "../Button";
 
 import {
   StyledSuccessContainer,
@@ -17,6 +18,7 @@ const Success = () => {
         <StyledH1>
           We’re putting together something we think you’ll really like…
         </StyledH1>
+        <Button>Go to &Open</Button>
       </SuccessTitleContainer>
       <SuccessIllustration />
     </StyledSuccessContainer>

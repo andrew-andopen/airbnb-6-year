@@ -49,7 +49,7 @@ const Form = ({ setStat }) => {
     });
   };
 
-  const [hasSubmitted, setHasSubmitted] = useState(true);
+  const [hasSubmitted, setHasSubmitted] = useState(false);
 
   useEffect(() => {
     reset();

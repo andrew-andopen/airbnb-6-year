@@ -6,6 +6,7 @@ export const StyledImage = styled.img`
   margin: 64px;
 
   @media (max-width: 850px) {
-    width: 70%;
+    width: 100%;
+    margin: 24px;
   }
 `;

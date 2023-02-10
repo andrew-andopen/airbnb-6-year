@@ -42,7 +42,7 @@ export const SuccessH1 = styled.h1`
 
   @media (max-width: 500px) {
     font-size: 32px;
-    line-height: 56px;
+    line-height: 40px;
     margin-bottom: 16px;
   }
 `;
