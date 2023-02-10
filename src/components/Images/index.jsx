@@ -34,7 +34,7 @@ const Images = ({ stat }) => {
         ease: "elastic.out(1.1, 0.8)",
       }
     );
-  }, [stat]);
+  }, []);
 
   return (
     <StyledImageContainer>
