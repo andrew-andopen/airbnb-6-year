@@ -1,17 +1,9 @@
 import React from "react";
 
-const Dot = () => {
-  const styles = {
-    dot: {
-      background: "#f8fc53",
-      width: "40px",
-      height: "40px",
-      position: "absolute",
-      borderRadius: "1000px",
-    },
-  };
+import { StyledDot } from "./styles";
 
-  return <div className="dot" style={styles.dot}></div>;
+const Dot = () => {
+  return <StyledDot className="dot"></StyledDot>;
 };
 
 export default Dot;

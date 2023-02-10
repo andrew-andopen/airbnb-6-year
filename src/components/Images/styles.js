@@ -9,6 +9,17 @@ export const StyledImageContainer = styled.div`
 
   @media (max-width: 1440px) {
     width: 60%;
+    height: 80%;
+  }
+
+  @media (max-width: 1200px) {
+    height: 60%;
+    width: 50%;
+  }
+
+  @media (max-width: 850px) {
+    height: 100%;
+    width: 100%;
   }
 `;
 
@@ -61,19 +72,25 @@ export const StyledImage = styled.img`
   }
 
   @media (max-width: 1440px) {
-    &.belo {
-      width: 25%;
-    }
-
-    &.aesop {
-      top: 25%;
-    }
-
+    &.belo,
+    &.aesop,
     &.guestbook {
       width: 25%;
     }
 
     &.tote {
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 850px) {
+    &.belo,
+    &.aesop,
+    &.guestbook,
+    &.tote,
+    &.candle,
+    &.waterbottle,
+    &.mug {
       width: 50%;
     }
   }

@@ -115,11 +115,32 @@ export const StyledContainer = styled.div`
   padding: 80px;
 
   overflow: hidden;
+
+  @media (max-width: 1000px) {
+    padding: 40px;
+  }
+
+  @media (max-width: 850px) {
+    padding-top: 120px;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
 `;
 
 export const StyledTitleContainer = styled.div`
   margin-bottom: 200px;
   max-width: 35%;
+
+  @media (max-width: 1200px) {
+    max-width: 50%;
+  }
+
+  @media (max-width: 850px) {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
 `;
 
 export const StyledFormContainer = styled.div`

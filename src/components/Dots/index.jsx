@@ -16,10 +16,14 @@ export const StyledDotsContainer = styled.div`
 `;
 
 const Dots = ({ stat }) => {
-  const matrix = [...Array(120).keys()];
+  let matrix = [...Array(120).keys()];
 
   const vw = window.innerWidth;
   const vh = window.innerHeight;
+
+  if (vw <= 850) {
+    matrix = [...Array(40).keys()];
+  }
 
   useEffect(() => {
     gsap.fromTo(

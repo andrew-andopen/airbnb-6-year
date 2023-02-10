@@ -21,7 +21,7 @@ import Images from "./components/Images";
 import data from "./data";
 
 function App() {
-  const [stat, setStat] = useState(4);
+  const [stat, setStat] = useState(0);
   const updateStat = () => {
     stat < data.length && setStat(stat + 1);
   };

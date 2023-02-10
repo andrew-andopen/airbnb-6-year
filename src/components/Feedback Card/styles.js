@@ -102,4 +102,39 @@ export const StyledFeedbackCard = styled.div`
     transform: rotate(30.38deg);
     z-index: -1;
   }
+
+  @media (max-width: 1000px) {
+    font-size: 16px;
+    padding: 16px 24px;
+
+    &.clover {
+      width: 320px;
+    }
+    &.barley {
+      max-width: 320px;
+    }
+
+    &.acid,
+    &.sage {
+      max-width: 220px;
+    }
+
+    &.terracotta,
+    &.forest,
+    &.stone,
+    &.blush {
+      max-width: 320px;
+    }
+
+    &.navy {
+      max-width: 500px;
+    }
+
+    &.rust,
+    &.pink,
+    &.acid_two,
+    &.blush_two {
+      max-width: 320px;
+    }
+  }
 `;
