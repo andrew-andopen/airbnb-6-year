@@ -18,7 +18,9 @@ const Success = () => {
         <StyledH1>
           We’re putting together something we think you’ll really like…
         </StyledH1>
-        <Button>Go to &Open</Button>
+        <a href="https://andopen.co/">
+          <Button andopen="Go to &Open">Go to &Open</Button>
+        </a>
       </SuccessTitleContainer>
       <SuccessIllustration />
     </StyledSuccessContainer>

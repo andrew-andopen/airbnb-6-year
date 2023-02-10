@@ -230,7 +230,7 @@ const Form = ({ setStat }) => {
             </StyledField>
           </StyledFormWrapper>
 
-          <Button type="submit">Submit</Button>
+          <Button submit="Submit" type="submit"></Button>
         </StyledForm>
       ) : (
         <Success />

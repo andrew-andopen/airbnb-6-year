@@ -3,12 +3,14 @@ import React from "react";
 import { useState } from "react";
 import { StyledButton } from "./styles";
 
-const Button = ({ updateStat, data, stat }) => {
+const Button = ({ updateStat, data, stat, submit, andopen }) => {
   return (
     <StyledButton
       onClick={() => (updateStat || data || stat ? updateStat() : null)}
     >
-      {updateStat || data || stat ? data[stat].button : "submit"}
+      {(data && data[stat].button) ||
+        (submit && submit) ||
+        (andopen && andopen)}
     </StyledButton>
   );
 };
