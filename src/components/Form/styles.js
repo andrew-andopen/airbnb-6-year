@@ -105,22 +105,3 @@ export const StyledSelect = styled.select`
     font-size: 20px;
   }
 `;
-
-export const StyledSuccessContainer = styled.div`
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-`;
-
-export const SuccessTitleContainer = styled.div`
-  max-width: 80%;
-  text-align: lefft;
-`;
-
-export const SuccessH1 = styled.h1`
-  font-family: "Leitura 3";
-  font-size: 64px;
-  margin-bottom: 24px;
-`;

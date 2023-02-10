@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import DownArrow from "../../images/down_arrow.svg";
 import Button from "../Button";
 import Dots from "../Dots";
+import Success from "../Success";
 
 import {
   StyledForm,
@@ -25,7 +26,7 @@ import {
 
 import { StyledH1, StyledTitleContainer } from "../../styles";
 
-const Form = () => {
+const Form = ({ setStat }) => {
   const {
     register,
     handleSubmit,
@@ -43,10 +44,12 @@ const Form = () => {
     }).then(() => {
       handleSubmit(true);
       setHasSubmitted(true);
+
+      setStat(5);
     });
   };
 
-  const [hasSubmitted, setHasSubmitted] = useState(true);
+  const [hasSubmitted, setHasSubmitted] = useState(false);
   const submittedState = () => {
     setHasSubmitted(true);
   };
@@ -233,16 +236,7 @@ const Form = () => {
           <Button type="submit">Submit</Button>
         </StyledForm>
       ) : (
-        <StyledSuccessContainer>
-          <SuccessTitleContainer>
-            <SuccessH1>Right, over to us now </SuccessH1>
-            <StyledH1>
-              We’re putting together something we think you’ll really like…
-            </StyledH1>
-          </SuccessTitleContainer>
-
-          <Dots />
-        </StyledSuccessContainer>
+        <Success />
       )}
     </>
   );

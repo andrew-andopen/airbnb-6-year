@@ -30,7 +30,7 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <GlobalFonts />
-      <Header setStat={setStat} />
+      <Header setStat={setStat} stat={stat} />
       {stat < data.length ? (
         <StyledContainer>
           <StyledTitleContainer>
@@ -44,7 +44,7 @@ function App() {
         </StyledContainer>
       ) : (
         <StyledFormContainer>
-          <Form />
+          <Form setStat={setStat} />
         </StyledFormContainer>
       )}
     </div>

@@ -4,6 +4,7 @@ export const StyledHeader = styled.header`
   width: 100%;
   padding: 40px 80px;
   position: absolute;
+  background-color: ${(props) => props.color};
 `;
 
 export const StyledLogo = styled.img`

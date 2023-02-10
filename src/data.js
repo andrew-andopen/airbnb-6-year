@@ -6,8 +6,8 @@ const data = [
   {
     title: (
       <StyledH1>
-        Six years on, we’re still going <span>350,000</span> — and together
-        we’ve gifted over hosts and guests
+        Six years on, we’re still going strong — and together we’ve gifted over{" "}
+        <span>562,100</span> hosts and guests
       </StyledH1>
     ),
     button: "Tell me more",
@@ -15,7 +15,7 @@ const data = [
   {
     title: (
       <StyledH1>
-        You’re part of a global community of <span>63,000</span> active gifters,
+        You’re part of a global community of <span>21,396</span> active gifters,
         and it’s that teamwork that makes the dream work
       </StyledH1>
     ),
@@ -25,7 +25,7 @@ const data = [
     title: (
       <StyledH1>
         We’re in the business of making magical moments, and you’ve helped make
-        <span> 33,000</span> people especially happy
+        <span> 22,601</span> people especially happy
       </StyledH1>
     ),
     button: "No, you’re crying…",
