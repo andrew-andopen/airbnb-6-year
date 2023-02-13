@@ -58,6 +58,8 @@ const Form = ({ setStat }) => {
   const [lastName, setLastname] = useState();
 
   useEffect(() => {
+    setFirstname(searchFirst);
+    setLastname(searchLast);
     setValue("firstname", firstName);
     setValue("lastname", lastName);
     reset();
