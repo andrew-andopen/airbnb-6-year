@@ -51,22 +51,18 @@ const Form = ({ setStat }) => {
 
   const [hasSubmitted, setHasSubmitted] = useState(false);
 
-  const [searchParams] = useSearchParams();
-  const searchFirst = searchParams.get("fname");
-  const [firstName, setFirstname] = useState();
-  const searchLast = searchParams.get("lname");
-  const [lastName, setLastname] = useState();
+  const [firstName, setFirstName] = useState();
+  const [lastName, setLastName] = useState();
+
+  const queryParams = new URLSearchParams(window.location.search);
 
   useEffect(() => {
-    // reset();
-    setFirstname(searchFirst);
-    setLastname(searchLast);
+    reset();
+    const firstName = queryParams.get("fname");
+    const lastName = queryParams.get("lname");
     setValue("firstname", firstName);
     setValue("lastname", lastName);
-    console.log("kjsdhfjks");
   }, []);
-
-  console.log(firstName, lastName);
 
   return (
     <>
