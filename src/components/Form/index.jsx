@@ -63,8 +63,9 @@ const Form = ({ setStat }) => {
     setLastname(searchLast);
     setValue("firstname", firstName);
     setValue("lastname", lastName);
-    console.log(firstName, lastName);
   }, []);
+
+  console.log(firstName, lastName);
 
   return (
     <>
