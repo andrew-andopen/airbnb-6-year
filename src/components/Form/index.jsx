@@ -51,7 +51,20 @@ const Form = ({ setStat }) => {
 
   const [hasSubmitted, setHasSubmitted] = useState(false);
 
+  const [searchParams] = useSearchParams();
+  const searchFirst = searchParams.get("fname");
+  const [firstName, setFirstname] = useState();
+  const searchLast = searchParams.get("lname");
+  const [lastName, setLastname] = useState();
+
   useEffect(() => {
+    setFirstname(searchFirst);
+    setLastname(searchLast);
+  }, []);
+
+  useEffect(() => {
+    setValue("firstname", firstName);
+    setValue("lastname", lastName);
     reset();
   }, []);
 
