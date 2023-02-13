@@ -22,7 +22,7 @@ const OprahComp = ({ stat }) => {
         ease: "elastic.out(1, 0.6)",
       }
     );
-  }, [stat]);
+  }, []);
 
   return <StyledOprah src={Oprah} alt="oprah" className="oprah" />;
 };
