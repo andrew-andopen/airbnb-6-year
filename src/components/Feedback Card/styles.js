@@ -12,9 +12,9 @@ export const StyledFeedbackCard = styled.div`
 
   &.sage {
     max-width: 420px;
-    bottom: 10%;
-    left: 5%;
-    transform: rotate(-18.38deg);
+    bottom: 15%;
+    left: 12%;
+    transform: rotate(-24.38deg);
   }
 
   &.barley {
@@ -33,8 +33,8 @@ export const StyledFeedbackCard = styled.div`
 
   &.acid {
     max-width: 420px;
-    bottom: 12%;
-    left: 35%;
+    bottom: 0%;
+    left: 15%;
     transform: rotate(-3deg);
   }
 
@@ -82,7 +82,7 @@ export const StyledFeedbackCard = styled.div`
   }
 
   &.pink {
-    max-width: 220px;
+    max-width: 320px;
     top: 20%;
     left: 10%;
     transform: rotate(-18.38deg);
@@ -99,8 +99,24 @@ export const StyledFeedbackCard = styled.div`
     max-width: 220px;
     bottom: 25%;
     left: 45%;
-    transform: rotate(30.38deg);
+    transform: rotate(-45.38deg);
     z-index: -1;
+  }
+
+  &.barley_two {
+    max-width: 420px;
+    bottom: 0%;
+    right: 8%;
+    transform: rotate(5.38deg);
+    z-index: -1;
+  }
+
+  &.stone_two {
+    max-width: 220px;
+    bottom: 15%;
+    right: 18%;
+    transform: rotate(5.38deg);
+    z-index: 0;
   }
 
   @media (max-width: 1000px) {

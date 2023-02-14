@@ -7,76 +7,73 @@ import { FeedbackContainer } from "./styles";
 const feedbackData = [
   {
     title:
-      "They are super cute but my favorite is how they were designed and made so ethically- very glad to be introduced to this brand and will be buying more from them",
+      "The quality of the bag is outstanding. It is durable, simple, slick and is foldable. I appreciate the gift greatly!",
     background: "#D8DCC4",
     color: "#346250",
     className: "sage card",
   },
   {
     title:
-      "Cool gift. Something a bit different than the average “corporate gift”. We appreciate it!",
+      "I looooove it and thank you so much for this kind careful gift, I'm a throw blanket lover. So again thank you so much.",
     background: "#ECE2CE",
     color: "#141414",
     className: "barley card",
   },
   {
-    title:
-      "“They are super cute but my favorite is how they were designed and made so ethically- very glad to be introduced to this brand and will be buying more from them””. We appreciate it!",
+    title: "Thank you for the AirbnbLove gift, I LOVE it!",
     background: "#64BCA0",
     color: "#346250",
     className: "clover card",
   },
   {
-    title: "“Hands down, the best gift I've received”",
+    title: "THANK YOU!!!",
     background: "#F8FC53",
     color: "#141414",
     className: "acid card",
   },
   {
     title:
-      "“Very neat and well made packaging and the blanket is wonderful both in terms of colors and materials. Last but not least: the fast and very detailed shipping. A thousand thanks.”",
+      "It was super sweet of my customer service rep to send me a gift after she learned it was my birthday on a call. I'm a new host, so this meant a lot.",
     background: "#A3B4BE",
     color: "#22566D",
     className: "stone card",
   },
   {
     title:
-      "“I think it’s great that you guys offered the option of donating to a charity :)”",
+      "Thank you so very much! I love all the Airbnb gifts and they really make me happy!",
     background: "#F7DECC",
     color: "#EE763D",
     className: "blush card",
   },
   {
-    title:
-      "“I think it’s great that you guys offered the option of donating to a charity",
+    title: "Thank you for the AirbnbLove gift, I LOVE it!",
     background: "#B66840",
     color: "#F7DECC",
     className: "terracotta card",
   },
   {
     title:
-      "“I think it’s great that you guys offered the option of donating to a charity",
+      "I wasn't expecting anything but it did brighten my day. Thank you for your thoughtfulness.",
     background: "#22566D",
     color: "#C8D8E2",
     className: "navy card",
   },
   {
     title:
-      "“They are super cute but my favorite is how they were designed and made so ethically- very glad to be introduced to this brand and will be buying more from them”",
+      "It was super sweet of my customer service rep to send me a gift after she learned it was my birthday on a call. I'm a new host, so this meant a lot.",
     background: "#346250",
     color: "#D8DCC4",
     className: "forest card",
   },
   {
     title:
-      "“Cool gift. Something a bit different than the average “corporate gift”. We appreciate it!”",
+      "Loved the gift. It is a great way to make the guest feel more connected to my home.",
     background: "#EE763D",
     color: "#F7DECC",
     className: "rust card",
   },
   {
-    title:
-      "“Cool gift. Something a bit different than the average “corporate gift”. We appreciate it!”",
+    title: "Absolutely beautiful! Thank you all so much for everything you do",
     background: "#F8FC53",
     color: "#141414",
     className: "acid_two card",
@@ -89,11 +86,24 @@ const feedbackData = [
     className: "pink card",
   },
   {
-    title:
-      "“I think it’s great that you guys offered the option of donating to a charity :)”",
+    title: "Everything was amazing",
     background: "#F7DECC",
     color: "#EE763D",
     className: "blush_two card",
+  },
+  {
+    title:
+      "Love this! Such a kind and useful gift that i cant wait to use - thank you!!",
+    background: "#ECE2CE",
+    color: "#141414",
+    className: "barley_two card",
+  },
+  {
+    title:
+      "Love this! Such a kind and useful gift that i cant wait to use - thank you!!",
+    background: "#A3B4BE",
+    color: "#22566D",
+    className: "stone_two card",
   },
 ];
 
