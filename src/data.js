@@ -7,7 +7,7 @@ const data = [
     title: (
       <StyledH1>
         Six years on, we’re still going strong — and together we’ve gifted over{" "}
-        <span>562,100</span> hosts and guests
+        <span>298,489</span> hosts and guests
       </StyledH1>
     ),
     button: "Tell me more",
