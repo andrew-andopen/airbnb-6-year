@@ -187,6 +187,7 @@ const Form = ({ setStat }) => {
                 <option value="Bulgaria">Bulgaria</option>
                 <option value="Canada">Canada</option>
                 <option value="Chile">Chile</option>
+                <option value="China">China</option>
                 <option value="Colombia">Colombia</option>
                 <option value="Croatia">Croatia</option>
                 <option value="Cyprus">Cyprus</option>
